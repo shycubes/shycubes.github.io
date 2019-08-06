@@ -1,0 +1,124 @@
+html {
+  height: 100vh;
+}
+
+#header {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+}
+
+.fas {
+  float: right;
+  font-size: 60px;
+  color: white;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.fas:hover {
+  font-size: 70px;
+}
+
+#optionBar {
+  opacity: 0.7;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  transition: 0.5s;
+  border-style: solid;
+}
+.themes{
+  opacity: 3.7;
+}
+#optionBar li {
+  z-index: 2;
+  margin: 20px auto;
+  width: 80%;
+  height: 20%;
+  font-size: 45px;
+  text-align: center;
+  color: #818181;
+  display: block;
+  border-color: white;
+  border-width: 0px;
+  border-radius: 20px;
+  transition: border-width 0.5s,;
+  background-size: cover;
+}
+
+#optionBar li:hover {
+  border-style: solid;
+  margin: 10px auto;
+  border-width: 10px;
+  transition: 0.3s;
+}
+
+#themeOcean {
+  background-image: url(https://66.media.tumblr.com/9f6c16cfc8e6015e04ecbedca9038757/tumblr_ojp6auodWy1ufw8o4o1_400.gif)
+}
+
+#themeRain{
+  background-image: url(http://giphygifs.s3.amazonaws.com/media/NnMH7LDpZTPZS/giphy.gif)
+}
+
+#themeStream{
+  background-image: url(https://66.media.tumblr.com/4db5be7085f4d3b06abbc636192b59f4/tumblr_n9823d42by1qk9powo1_500.gif)
+}
+
+#themeCitySunset{
+  background-image: url(https://media.giphy.com/media/V5qXaUBISlbTa/giphy.gif)
+}
+
+
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+#boundaryBox {
+  padding: 10%;
+  width: 81vw;
+  height: 25vw;
+}
+
+#container {
+  background-image: url(https://media.giphy.com/media/V5qXaUBISlbTa/giphy.gif);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  /* text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  display: inline-block;
+  box-shadow: 5px 5px 3px grey;
+}
+
+.red {
+  background-color: red
+}
+
+.blue {
+  background-color: blue
+}
+
+.green {
+  background-color: green
+}
+
+.yellow {
+  background-color: yellow
+}
