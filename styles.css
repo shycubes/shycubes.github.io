@@ -10,7 +10,7 @@ html {
 
 .fas {
   float: right;
-  font-size: 60px;
+  font-size: 5vw;
   color: white;
   margin-top: 50px;
   margin-right: 50px;
@@ -91,7 +91,7 @@ body {
   background-image: url(https://media.giphy.com/media/V5qXaUBISlbTa/giphy.gif);
   background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   /* text-align: center;
   display: flex;

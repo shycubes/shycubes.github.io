@@ -64,13 +64,15 @@ function escapeFunction(box, i) {
 
   //This detects the boundaries, gives them "padding", then reverses the movement direction if they meet the condition
   if (xCord < 0) {
-    if ((Math.abs(xCord) > measurements.distanceLeft - 400)) {
+    if ((Math.abs(xCord) > measurements.distanceLeft )) {
       console.log("LEFT VECTOR REVERSED");
+      xCord /= 4;
       xCord *= -1;
     }
-  } else if (xCord < measurements.distanceRight - 200) {
+  } else if (xCord >  Math.abs(measurements.distanceRight) - 500) {
     console.log("RIGHT VECTOR REVERSED");
     xCord *= -1;
+    xCord /= 4;
   }
 
   if (yCord < 0) {
