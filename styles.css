@@ -8,16 +8,53 @@ html {
   position: fixed;
 }
 
-.fas {
-  float: right;
+.uiButton {
+  z-index: 5;
   font-size: 5vw;
   color: white;
-  margin-top: 50px;
-  margin-right: 50px;
+  margin: 50px;
 }
 
-.fas:hover {
-  font-size: 70px;
+#clearButton {
+  float: left;
+}
+
+#clearButton:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+#clearButton:active{
+  font-size: 7.5vw;
+}
+
+#optionButton {
+  float: right;
+  transition: 0.5s;
+}
+
+#optionButton:hover {
+  color: grey;
+}
+
+#optionButton:active {
+  font-size: 7.5vw;
+  transition: 0.3s;
+}
+
+#newCubeButton {
+  float: left;
+  transition: 0.5s;
+}
+
+#newCubeButton:hover {
+  color: lightgreen;
+  border-radius: 10%;
+  transition: 0.5s;
+}
+
+#newCubeButton:active {
+  font-size: 7.5vw;
 }
 
 #optionBar {
@@ -33,9 +70,11 @@ html {
   transition: 0.5s;
   border-style: solid;
 }
-.themes{
+
+.themes {
   opacity: 3.7;
 }
+
 #optionBar li {
   z-index: 2;
   margin: 20px auto;
@@ -48,7 +87,7 @@ html {
   border-color: white;
   border-width: 0px;
   border-radius: 20px;
-  transition: border-width 0.5s,;
+  transition: border-width 0.5s, ;
   background-size: cover;
 }
 
@@ -63,27 +102,21 @@ html {
   background-image: url(https://66.media.tumblr.com/9f6c16cfc8e6015e04ecbedca9038757/tumblr_ojp6auodWy1ufw8o4o1_400.gif)
 }
 
-#themeRain{
+#themeRain {
   background-image: url(http://giphygifs.s3.amazonaws.com/media/NnMH7LDpZTPZS/giphy.gif)
 }
 
-#themeStream{
+#themeStream {
   background-image: url(https://66.media.tumblr.com/4db5be7085f4d3b06abbc636192b59f4/tumblr_n9823d42by1qk9powo1_500.gif)
 }
 
-#themeCitySunset{
+#themeCitySunset {
   background-image: url(https://media.giphy.com/media/V5qXaUBISlbTa/giphy.gif)
 }
-
 
 body {
   margin: 0px;
   overflow: hidden;
-}
-
-#boundaryBox {
-  height: 100vh;
-  width: 100vw;
 }
 
 #container {
@@ -104,10 +137,17 @@ body {
   margin: 20px;
   display: inline-block;
   box-shadow: 5px 5px 3px grey;
+  position: absolute;
+  top: -90px;
+}
+
+#firstCube {
+  top: 200px;
+  right: 47.5%;
 }
 
 .red {
-  background-color: red
+  background-color: red;
 }
 
 .blue {
@@ -120,4 +160,11 @@ body {
 
 .yellow {
   background-color: yellow
+}
+
+#centerWrapper {
+  padding: 5%;
+  width: 60vw;
+  height: 60vh;
+  margin: 0 auto;
 }

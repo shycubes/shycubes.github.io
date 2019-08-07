@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='styles.css' rel='stylesheet' type='text/css'>
-  <title>ShyCubes</title>
+    <title>Shy Cubes</title>
 </head>
+
 <body>
-  <div id='header'>
-            <i id='optionButton' onclick='openBar()' class="fas fa-bars options"></i>
-  </div>
-  <div id='optionBar'>
-      <li class='themes' id='themeOcean'></li>
-      <li class='themes' id='themeRain'></li>
-      <li class='themes' id='themeStream'></li>
-      <li class='themes' id='themeCitySunset'></li>
-  </div>
-  <div id='container'>
-    <div id='boundaryBox'>
-        <div id='centerWrapper'>
-            <div id='redBox' class="box red"></div>
-            <div id='blueBox' class='box blue'></div>
-            <div id='greenBox'class='box green'></div>
-            <div id='yellowBox'class='box yellow'></div>
-        </div>
+    <div id='header'>
+        <i id='clearButton' class="uiButton fas fa-undo-alt"></i>
+        <i  id='newCubeButton' class="uiButton far fa-plus-square" onclick='createCube()'></i>
+        
+        <i id='optionButton' class="uiButton fas fa-bars options"></i>
     </div>
-  </div>
-  <script src="https://kit.fontawesome.com/a7841e97fa.js"></script>
-  <script src='main.js'> </script>
-  <script src="anime.js"></script>
+    <div id='optionBar'>
+        <li class='themes' id='themeOcean'></li>
+        <li class='themes' id='themeRain'></li>
+        <li class='themes' id='themeStream'></li>
+        <li class='themes' id='themeCitySunset'></li>
+    </div>
+    <div id='container'>
+            <div id='boundaryBox'>
+                    <div id='centerWrapper'>
+                            <div id='firstCube' class="box red"></div>
+                        </div>
+                </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a7841e97fa.js"></script>
+    <script src='main.js'> </script>
+    <script src="anime.js"></script>
 </body>
+
 </html>
