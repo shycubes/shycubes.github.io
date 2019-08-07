@@ -82,9 +82,8 @@ body {
 }
 
 #boundaryBox {
-  padding: 10%;
-  width: 81vw;
-  height: 25vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 #container {
