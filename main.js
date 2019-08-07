@@ -66,13 +66,11 @@ function escapeFunction(box, i) {
   if (xCord < 0) {
     if ((Math.abs(xCord) > measurements.distanceLeft )) {
       console.log("LEFT VECTOR REVERSED");
-      xCord /= 4;
       xCord *= -1;
     }
   } else if (xCord >  Math.abs(measurements.distanceRight) - 500) {
     console.log("RIGHT VECTOR REVERSED");
     xCord *= -1;
-    xCord /= 4;
   }
 
   if (yCord < 0) {
